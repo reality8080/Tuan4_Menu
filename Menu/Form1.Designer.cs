@@ -99,13 +99,15 @@
             // 
             // loadBtn
             // 
-            loadBtn.Location = new Point(645, 105);
+            loadBtn.Location = new Point(645, 101);
             loadBtn.Name = "loadBtn";
             loadBtn.Size = new Size(117, 29);
             loadBtn.TabIndex = 8;
             loadBtn.Text = "Hiển thị";
             loadBtn.UseVisualStyleBackColor = true;
             loadBtn.Click += loadBtn_Click;
+            loadBtn.MouseLeave += loadBtn_MouseLeave;
+            loadBtn.MouseHover += loadBtn_MouseHover;
             // 
             // priceTxb
             // 
@@ -114,6 +116,8 @@
             priceTxb.Size = new Size(312, 30);
             priceTxb.TabIndex = 7;
             priceTxb.KeyPress += priceTxb_KeyPress;
+            priceTxb.MouseLeave += priceTxb_MouseLeave;
+            priceTxb.MouseHover += priceTxb_MouseHover;
             // 
             // priceLB
             // 
@@ -126,13 +130,15 @@
             // 
             // selectBtn
             // 
-            selectBtn.Location = new Point(645, 174);
+            selectBtn.Location = new Point(645, 173);
             selectBtn.Name = "selectBtn";
             selectBtn.Size = new Size(117, 29);
             selectBtn.TabIndex = 5;
             selectBtn.Text = "Chọn";
             selectBtn.UseVisualStyleBackColor = true;
             selectBtn.Click += selectBtn_Click;
+            selectBtn.MouseLeave += selectBtn_MouseLeave;
+            selectBtn.MouseHover += selectBtn_MouseHover;
             // 
             // menuLV
             // 
@@ -164,6 +170,8 @@
             addFoodBtn.Text = "Thêm";
             addFoodBtn.UseVisualStyleBackColor = true;
             addFoodBtn.Click += addFoodBtn_Click;
+            addFoodBtn.MouseLeave += addFoodBtn_MouseLeave;
+            addFoodBtn.MouseHover += addFoodBtn_MouseHover;
             // 
             // foodTxt
             // 
@@ -172,6 +180,8 @@
             foodTxt.Size = new Size(312, 30);
             foodTxt.TabIndex = 1;
             foodTxt.KeyPress += foodTxt_KeyPress;
+            foodTxt.MouseLeave += foodTxt_MouseLeave;
+            foodTxt.MouseHover += foodTxt_MouseHover;
             // 
             // foodLb
             // 

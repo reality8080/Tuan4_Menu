@@ -292,17 +292,67 @@ namespace Menu
                     e.ColumnIndex == menudGV.Columns["price"]?.Index)
                 {
                     Double price;
-                    if (!Double.TryParse(menudGV.Rows[e.RowIndex].Cells["price"].Value?.ToString(),out price))
+                    if (!Double.TryParse(menudGV.Rows[e.RowIndex].Cells["price"].Value?.ToString(), out price))
                     {
                         MessageBox.Show("Gia tri ban dua vao khong dung", "Canh Bao", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         return;
                     }
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Canh Bao", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             }
+        }
+
+        private void addFoodBtn_MouseHover(object sender, EventArgs e)
+        {
+            addFoodBtn.BackColor = Color.Turquoise;
+        }
+
+        private void addFoodBtn_MouseLeave(object sender, EventArgs e)
+        {
+            addFoodBtn.BackColor = Color.White;
+        }
+
+        private void loadBtn_MouseHover(object sender, EventArgs e)
+        {
+            loadBtn.BackColor = Color.Turquoise;
+        }
+
+        private void loadBtn_MouseLeave(object sender, EventArgs e)
+        {
+            loadBtn.BackColor = Color.White;
+        }
+
+        private void selectBtn_MouseHover(object sender, EventArgs e)
+        {
+            selectBtn.BackColor = Color.Turquoise;
+        }
+
+        private void selectBtn_MouseLeave(object sender, EventArgs e)
+        {
+            selectBtn.BackColor = Color.White;
+        }
+
+        private void foodTxt_MouseHover(object sender, EventArgs e)
+        {
+            foodTxt.BackColor = Color.Blue;
+        }
+
+        private void foodTxt_MouseLeave(object sender, EventArgs e)
+        {
+            foodTxt.BackColor = Color.White;
+        }
+
+        private void priceTxb_MouseHover(object sender, EventArgs e)
+        {
+            priceTxb.BackColor = Color.Blue;
+        }
+
+        private void priceTxb_MouseLeave(object sender, EventArgs e)
+        {
+            priceTxb.BackColor = Color.White;
         }
     }
     #endregion
